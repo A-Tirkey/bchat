@@ -10,6 +10,14 @@ import userRoutes from "./routes/user.routes.js";
 import connectToMongoDB from "./db/connectToMongoDB.js";
 import { app, server } from "./socket/socket.js";
 
+import cors from "cors";
+
+app.use(cors({
+  origin: "https://yutytutyutt.netlify.app/", // replace with actual frontend URL
+  credentials: true,
+}));
+
+
 dotenv.config();
 
 const __dirname = path.resolve();
