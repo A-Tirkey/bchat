@@ -13,7 +13,7 @@ import { app, server } from "./socket/socket.js";
 import cors from "cors";
 
 app.use(cors({
-  origin: "https://yutytutyutt.netlify.app/", // replace with actual frontend URL
+  origin: "*", // replace with actual frontend URL
   credentials: true,
 }));
 
