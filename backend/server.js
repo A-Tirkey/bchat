@@ -15,7 +15,7 @@ import cors from "cors";
 dotenv.config();
 
 app.use(cors({
- origin: "https://yutytutyutt.netlify.app",
+ origin: ["https://yutytutyutt.netlify.app", "https://frotnchat.onrender.com"],
   credentials: true,
 }));
 
