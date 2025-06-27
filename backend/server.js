@@ -15,7 +15,7 @@ import cors from "cors";
 dotenv.config();
 
 app.use(cors({
- origin: process.env.CLIENT_ORIGIN,
+ origin: "https://yutytutyutt.netlify.app",
   credentials: true,
 }));
 
