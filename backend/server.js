@@ -12,13 +12,15 @@ import { app, server } from "./socket/socket.js";
 
 import cors from "cors";
 
+dotenv.config();
+
 app.use(cors({
-  origin: "*", // replace with actual frontend URL
+ origin: process.env.CLIENT_ORIGIN,
   credentials: true,
 }));
 
 
-dotenv.config();
+
 
 const __dirname = path.resolve();
 // PORT should be assigned after calling dotenv.config() because we need to access the env variables. Didn't realize while recording the video. Sorry for the confusion.
